@@ -4,10 +4,6 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * Complete the code, parse integers, calculate the sum of numbers in the WORDS, join strings with
- * space delimiter
- */
 public class ParseIntegers {
 
     private static final List<String> WORDS =
@@ -26,11 +22,11 @@ public class ParseIntegers {
                 int number = Integer.parseInt(next);
                 sum += number;
             } catch (NumberFormatException e) {
-                justWords.append(next).append(" ");
+                justWords.append(" ").append(next);  // Add space before appending
             }
         }
 
         System.out.println("Sum is " + sum);
-        System.out.println("Just words:" + justWords.toString().trim());
+        System.out.println("Just words: " + justWords.toString().trim());
     }
 }
