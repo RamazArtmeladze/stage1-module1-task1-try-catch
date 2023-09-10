@@ -28,10 +28,9 @@ public class ParseIntegers {
             } catch (NumberFormatException e) {
                 justWords += next + " ";
             }
-
-            System.out.println("Sum is " + sum);
-            System.out.println("Just words:" + justWords);
         }
+
+        System.out.println("Sum is " + sum);
+        System.out.println("Just words:" + justWords);
     }
 }
-
